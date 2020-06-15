@@ -1,0 +1,46 @@
+Git指令简易记录
+
+
+配置用户名和邮箱
+git config --global user.name "yourname"
+git config --global user.email "youremail@example.com"
+
+初始化仓库
+git init
+
+添加文件
+git add filename
+
+提交到仓库
+git commit -m "commit comment"
+
+查看是否有文件未提交
+git status
+
+读取文件的更新内容
+git diff filename
+
+查看文件历史记录
+git log
+
+版本回退
+git reset --hard HEAD^  回退一次
+git reset --hard HEAD^^  回退一次
+git reset --hard HEAD`100  回退100次
+
+撤销在工作区的修改
+git checkout --filename
+
+创建SSH KEY
+ssh-keygen -t rsa -C "youremail@example.com"
+
+本地库的内容推送到远程
+git remote add origin https://github.com/xxxx/xxx
+git push -u origin master
+之后做提交
+git push origin master
+
+克隆到本地库
+git clone https://github.com/xxxx/xxx
+
+有关分支和多人协作之后在补充
